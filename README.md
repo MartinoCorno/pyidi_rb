@@ -1,5 +1,12 @@
 [![Documentation Status](https://readthedocs.org/projects/pyidi/badge/?version=latest)](https://pyidi.readthedocs.io/en/latest/?badge=latest)
 ![example workflow](https://github.com/ladisk/pyidi/actions/workflows/python_package_testing.yaml/badge.svg)
+# Fork Description
+
+## Python Image Displacement Identification with Rigid Body Modes and Homography Pre-Processing
+
+This fork extends the original PyIDI framework by incorporating additional tools for handling common experimental challenges. First, it addresses the issue of camera misalignment: in many setups, the camera is not perfectly perpendicular to the object's surface. This extension allows users to either detect or manually input the angle between the camera plane and the measurement surface, and applies a corresponding pre-transformation to each frame to compensate for the resulting perspective distortion.
+
+Second, the project introduces methods to isolate and remove rigid body motion from the displacement field. This can be achieved either through marker tracking or by leveraging regions of the system where deformations are known to be negligible. These additions aim to improve the accuracy of displacement measurements in dynamic or imperfect experimental conditions.
 
 # pyidi
 Image-based Displacement Identification (IDI) implementation in python.
